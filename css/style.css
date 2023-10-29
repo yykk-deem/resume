@@ -1,8 +1,12 @@
+h1{
+	font-family: 'Athiti', sans-serif;
+  color:#FAC07D;
+}
+
 h5{
   font-family: 'Playfair Display' ,serif;
   color:#FAC07D;
   font-size: 20px;
-
 }
 
 p{
@@ -14,10 +18,62 @@ p{
 .myfont{
 	font-family: 'Playfair Display' ,serif;
   color:#5C0000;
-
 }
 
 .my-bg{
 background-color: #5C0000;
 
+}
+
+.myp{
+  font-family: 'Athiti', sans-serif;
+  color:#5C0000;
+  font-size: 18px;
+}
+
+.accordion{
+	--bs-accordion-btn-bg: #FFFFFF;
+	--bs-accordion-active-bg: #FAC07D;
+  --bs-accordion-active-color: #5C0000;
+  --bs-accordion-btn-focus-box-shadow: none;
+}
+
+@media screen and (min-width:992px){
+ 
+  .navbar{
+	padding: 0;
+	}
+  
+	.navbar .navbar-nav .nav-link{
+	padding: 1em 0;
+	}
+  
+  .navbar .navbar-nav .nav-link{
+	margin: 0 1em;
+	}
+}
+
+.navbar .navbar-nav .nav-item{
+	position: relative;
+}
+
+.navbar .navbar-nav .nav-item::after{
+	position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  content: '';
+  background-color: #FAC07D;
+	width: 0%;
+  height: 4px;
+  transition: all .5s;
+}
+
+.navbar .navbar-nav .nav-item:hover::after{
+ 	width: 100%; 
+}
+
+.figure .figcaption{
+  --bs-blockquote-footer-color: #FFFFFF;
 }
